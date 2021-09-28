@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Today's Date</title>
+    <style>
+        p{
+            font-size:35px;
+            background-color:yellow;
+            outline-width: 10px;
+            outline-offset:0px;
+            outline-style: outset;
+            outline-color: blue;
+            margin-right:250px;
+            margin-left:250px;
+            margin-top:400px;
+            margin-bottom:400px;
+            padding-left:10px;
+            padding-right:10px;
+            padding-top:10px;
+            padding-bottom:10px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="display"></p>
+    <script>
+        var birthday = new Date(2010, 5, 23, 11, 37, 0, 0);
+        var now = new Date();
+        birthday1 = birthday.getYear();
+        now1 = now.getYear();
+        var age1 = now1 - birthday1;
+        birthday2 = birthday.getMonth();
+        now2 = now.getMonth();
+        var age2 = now2 - birthday2;
+        birthday3 = birthday.getDate();
+        now3 = now.getDate();
+        var age3 = now3 - birthday3;
+        birthday4 = birthday.getHours();
+        now4 = now.getHours();
+        var age4 = now4 - birthday4;
+        birthday5 = birthday.getMinutes();
+        now5 = now.getMinutes();
+        var age5 = now5 - birthday5;
+        birthday6 = birthday.getSeconds();
+        now6 = now.getSeconds();
+        var age6 = now6 - birthday6;
+        birthday7 = birthday.getMilliseconds();
+        now7 = now.getMilliseconds();
+        var age7 = now7 - birthday7;
+        var display = document.getElementById("display");
+        var content = "I am " + age1 + " Years, " + age2 + " Months, " + age3 + " Days, " + age4 + " Hours, " + age5 + " Minutes, " + age6 + " Seconds and " + age7 + " Milliseconds old."
+        display.innerHTML = content;
+    </script>
+</body>
+
+
+
+</html>
